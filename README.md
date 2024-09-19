@@ -9,4 +9,7 @@ git clone --mirror https://github.com/SUS0a/BFG-learn.git
 
 
 ### Delete all files named 'env' file :
-java -jar bfg.jar --delete-files env BFG-learn.git
+java -jar .\bfg-1.14.0.jar --delete-files env .\BFG-learn.git\
+
+cd .\BFG-learn.git\
+$ git reflog expire --expire=now --all && git gc --prune=now --aggressive
